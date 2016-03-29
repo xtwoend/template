@@ -24,3 +24,14 @@ Add the following line to your config/app.php file:
 ```
   php artisan vendor:publish --provider="Xtwoend\TemplateServiceProvider" --force
 ```  
+
+## Install elixir npm
+```
+	npm install
+```
+
+## Run Gulp
+``` 
+	gulp
+```
+
