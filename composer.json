@@ -1,0 +1,14 @@
+{
+    "name": "xtwoend/template",
+    "description": "my template base",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdul Hafidz A",
+            "email": "aditans88@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
