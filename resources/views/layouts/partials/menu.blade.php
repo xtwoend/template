@@ -17,55 +17,13 @@
         <nav class="nav-primary hidden-xs">
           <ul class="nav" data-ride="collapse">
             <li class="divider"></li>
-            <li class="{{ ($menu == 'dashboard')? 'active': '' }}">
-              <a href="{{ route('admin.dashboard.index') }}">
+            <li class="{{ ($menu == 'home')? 'active': '' }}">
+              <a href="{{ url('home') }}">
                 <i class="icon-speedometer icon"></i>
                 <span>Dashboard</span>
               </a>
             </li>
-            <li class="{{ ($menu == 'event')? 'active': '' }}">
-              <a href="{{ route('admin.event.index') }}">
-                <i class="icon-bag icon"></i>
-                <span>Event</span>
-              </a>
-            </li>
-            <li class="{{ ($menu == 'book')? 'active': '' }}">
-              <a href="#" class="auto">
-                <span class="pull-right text-muted">
-                  <i class="fa fa-angle-left text"></i>
-                  <i class="fa fa-angle-down text-active"></i>
-                </span>
-                <i class="icon-book-open icon">
-                </i>
-                <span>Books</span>
-              </a>
-              <ul class="nav dk text-sm bg-white">
-                <li class="{{ ($submenu == 'book')? 'active': '' }}">
-                  <a href="{{ route('admin.book.index') }}" class="auto">
-                    <i class="fa fa-angle-right text-xs"></i>
-                    <span>Library</span>
-                  </a>
-                </li>
-                <li class="{{ ($submenu == 'category')? 'active': '' }}">
-                  <a href="{{ route('admin.category.index') }}" class="auto">
-                    <i class="fa fa-angle-right text-xs"></i>
-                    <span>Category</span>
-                  </a>
-                </li>
-                <li class="{{ ($submenu == 'author')? 'active': '' }}">
-                  <a href="{{ route('admin.author.index') }}" class="auto">
-                    <i class="fa fa-angle-right text-xs"></i>
-                    <span>Author</span>
-                  </a>
-                </li>
-                <li >
-                  <a href="#" class="auto">
-                    <i class="fa fa-angle-right text-xs"></i>
-                    <span>Publisher</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+
             <li >
               <a href="#" class="auto">
                 <span class="pull-right text-muted">
