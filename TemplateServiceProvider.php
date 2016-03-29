@@ -15,9 +15,11 @@ class TemplateServiceProvider extends ServiceProvider
         $this->publishes([
             realpath(__DIR__ . '/resources/views') => base_path('resources/views'),
             realpath(__DIR__ . '/resources/lang') => base_path('resources/lang'),
-            realpath(__DIR__ . '/resources/assets') => base_path('resources/assets'),
+            realpath(__DIR__ . '/resources/assets/js') => base_path('resources/assets/js'),
+            realpath(__DIR__ . '/resources/assets/less') => base_path('resources/assets/less'),
             realpath(__DIR__ . '/resources/assets/public') => public_path('/'),
             realpath(__DIR__ . '/config/gulpfile.js') => base_path('gulpfile.js'),
+            realpath(__DIR__ . '/config/config.js') => config_path('site.php'),
         ]);
 
         view()->composer('*', function ($view) {
